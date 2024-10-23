@@ -1,0 +1,109 @@
+/* Fichier: src/App.css */
+
+body {
+  background-color: #f8f9fa; /* Couleur de fond claire */
+}
+
+.navbar {
+  background-color: #0a0fba; /* Couleur de la navbar */
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff; /* Texte blanc pour la navbar */
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Orange au survol des liens */
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement */
+  justify-content: center; /* Centre verticalement */
+  padding: 20px;
+  max-width: 500px;
+  max-height: 900px; /* Ajustez à une largeur raisonnable */
+  width: 100%; /* Prend toute la largeur disponible jusqu'à max-width */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  margin-top: 37px;
+  border: 7px  #1100c7; /* Bordure bleue */
+  border-radius: 10px; /* Arrondi des coins */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Ombre portée plus prononcée */
+  background-color: #ffffff; /* Couleur de fond blanche */
+}
+
+
+
+
+.expression-display, .result-display {
+  border: 1px solid #ddd;
+  padding: 5px; /* Réduit le rembourrage */
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  font-size: 16px; /* Réduit la taille de la police */
+  margin-bottom: 10px;
+  min-height: 30px; /* Définit une hauteur minimale */
+  width: 100%; /* Prend toute la largeur du conteneur */
+  text-align: right; /* Aligne le texte à droite */
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+  gap: 5px; /* Réduit l'espace entre les boutons */
+  width: 100%; /* Prend toute la largeur du conteneur */
+}
+
+.calculator button {
+  height: 40px; /* Hauteur uniforme pour tous les boutons */
+  font-size: 14px; /* Réduit la taille de police */
+  transition: transform 0.2s; /* Ajout d'une transition pour l'effet de survol */
+}
+
+.calculator button:hover {
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+.btn-danger {
+  background-color: #f0361d; /* Couleur du bouton effacer */
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Couleur bleue pour le bouton Calculer */
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+@media (max-width: 600px) {
+  .calculator button {
+      height: 35px; /* Ajustez la hauteur des boutons */
+      font-size: 12px; /* Réduit la taille de police sur petits écrans */
+  }
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); 
+  font-family: 'Roboto', sans-serif; /* Ou 'Montserrat' */
+  font-size: 16px; /* Ajuste la taille si nécessaire */
+
+  /* Ombre portée plus prononcée */
+}
+.calculator-icon {
+  width: 50px; /* Ajuste la taille de l'icône selon tes besoins */
+  height: auto; /* Garde le ratio d'aspect de l'image */
+  margin-bottom: 15px; /* Espace entre l'icône et le titre */
+}
+.red-icon {
+  color: #a40e0e; /* Change la couleur des icônes en rouge */
+}
+
+
+
