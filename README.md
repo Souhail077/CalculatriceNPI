@@ -6,6 +6,8 @@ Ce projet est une calculatrice en ligne développée avec **FastAPI** pour le ba
   <img src="https://i.ibb.co/VvNzqrF/Capture-d-e-cran-2024-10-24-a-12-01-55.png" alt="Aperçu de l'application" width="500"/>
 </p>
 
+**Lien vers l'application :** [https://npi-frontend-998096155776.us-central1.run.app/](https://npi-frontend-998096155776.us-central1.run.app/)
+
 
 
 ## Fonctionnalités
