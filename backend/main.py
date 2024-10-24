@@ -56,7 +56,7 @@ def evaluate_rpn(expression: str) -> float:
     stack = []
     tokens = expression.split()
     for token in tokens:
-        if token.lstrip('-').replace('.', '', 1).isdigit():  # Vérifie si c'est un nombre
+        if token.lstrip('-').replace('.', '', 1).isdigit():  
             stack.append(float(token))
         else:
             if len(stack) < 2:
@@ -102,17 +102,13 @@ async def get_calculations(skip: int = 0, limit: int = 10):
 async def download_csv():
     db: Session = SessionLocal()
     try:
-        # Récupérer toutes les calculs de la base de données
         calculations = db.query(Calculation).all()
 
-        # Création d'un flux pour le fichier CSV
         def generate_csv():
-            # Création d'un objet CSV
-            yield "id,expression,result\n"  # En-têtes
+            yield "id,expression,result\n"  
             for calc in calculations:
                 yield f"{calc.id},{calc.expression},{calc.result}\n"
 
-        # Retourner la réponse en tant que fichier CSV
         return StreamingResponse(generate_csv(), media_type="text/csv", headers={"Content-Disposition": "attachment; filename=calculations.csv"})
     finally:
         db.close()
