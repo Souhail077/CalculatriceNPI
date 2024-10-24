@@ -99,6 +99,9 @@ Frontend (React) : http://localhost:3000
 
 Backend (FastAPI) : http://localhost:8000  
 
+## Author
+
+Développé par Souhail ROUAI - 2024
 
 
   
